@@ -14,7 +14,7 @@ file_name = 'training_data.npy'
 
 if(os.path.isfile(file_name)):
     print('File exists')
-    training_data = list(np.load(file_name))
+    training_data = list(np.load(file_name, allow_pickle=True))
 else:
     print('File does not exists')
     training_data = []
@@ -30,7 +30,7 @@ while(True):
     keys = keypress.kb_state()
     training_data.append([screen, keys])
 
-    if len(training_data) % 500 == 0:
+    if len(training_data) % 100 == 0:
         print(len(training_data))
         np.save(file_name, training_data)
 
