@@ -1,5 +1,8 @@
 # alexnet.py
 
+# Shamesly copied from Python plays GTA videoseries
+# https://www.youtube.com/playlist?list=PLQVvvaa0QuDeETZEOy4VdocT7TOjfSA8a
+
 """ AlexNet.
 References:
     - Alex Krizhevsky, Ilya Sutskever & Geoffrey E. Hinton. ImageNet
@@ -31,7 +34,7 @@ def alexnet(width, height, lr):
     network = dropout(network, 0.5)
     network = fully_connected(network, 4096, activation='tanh')
     network = dropout(network, 0.5)
-    network = fully_connected(network, 2, activation='softmax')
+    network = fully_connected(network, 3, activation='softmax')
     network = regression(network, optimizer='momentum',
                          loss='categorical_crossentropy',
                          learning_rate=lr, name='targets')

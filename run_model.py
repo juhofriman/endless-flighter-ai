@@ -33,12 +33,12 @@ while(True):
     moves = list(np.around(prediction))
     print(moves, prediction)
 
-    if moves == [1.0, 0]:
+    if moves == [1.0, 0, 0]:
         keyboard.press('a')
         keyboard.release('s')
-    elif moves == [0, 1.0]:
+    elif moves == [0, 1.0, 0]:
         keyboard.press('s')
         keyboard.release('a')
-    else:
+    elif moves == [0, 0, 1.0]:
         keyboard.release('a')
         keyboard.release('s')

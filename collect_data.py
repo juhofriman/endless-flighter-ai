@@ -4,11 +4,8 @@ import numpy as np
 from PIL import ImageGrab
 import cv2
 import time
-from pynput import keyboard
 import keypress
 import os
-
-last_time = time.time()
 
 file_name = 'training_data.npy'
 
@@ -23,8 +20,6 @@ else:
 while(True):
     screen = np.array(ImageGrab.grab(bbox=(20,220, 420, 450)))
 
-    last_time = time.time()
-    print('Frame took {} seconds'.format(time.time() - last_time))
     # cv2.imshow('window', cv2.resize(cv2.cvtColor(screen, cv2.COLOR_RGBA2GRAY), (80, 60)))
     screen = cv2.resize(cv2.cvtColor(screen, cv2.COLOR_RGBA2GRAY), (80, 60))
     keys = keypress.kb_state()

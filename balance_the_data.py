@@ -29,13 +29,13 @@ for data in train_data:
     choice = data[1]
 
     if(choice == [1, 0]):
-        lefts.append([img, choice])
+        lefts.append([img, [1, 0, 0]])
 
     if(choice == [0, 1]):
-        rights.append([img, choice])
+        rights.append([img, [0, 1, 0]])
 
     if(choice == [0, 0]):
-        forwards.append([img, choice])
+        forwards.append([img, [0, 0, 1]])
 
 forwards = forwards[:len(lefts)][:len(rights)]
 lefts = lefts[:len(forwards)]
@@ -51,12 +51,12 @@ print(Counter(df[1].apply(str)))
 
 np.save('training_data-balanced.npy', final_data)
 
-for data in train_data:
-    img = data[0]
-    choice = data[1]
-    cv2.imshow('test', img)
-    print(choice)
-
-    if cv2.waitKey(25) & 0xFF == ord('q'):
-        cv2.destroyAllWindows()
-        break
+# for data in train_data:
+#     img = data[0]
+#     choice = data[1]
+#     cv2.imshow('test', img)
+#     print(choice)
+#
+#     if cv2.waitKey(25) & 0xFF == ord('q'):
+#         cv2.destroyAllWindows()
+#         break
