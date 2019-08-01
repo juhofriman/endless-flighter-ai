@@ -2,6 +2,8 @@
 
 TensorFlow experiment trying to teach AI to play a simple game.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZmYCy4eH_Mg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Setup instructions
 
 After tinkering with python environment, you should run [Endless Flighter](https://github.com/juhofriman/endless-flighter) game in your browser. Make an setup, in which you can position the game in the same exact location of the screen, as this uses screen capture.
