@@ -2,7 +2,7 @@
 
 TensorFlow experiment trying to teach AI to play a simple game.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZmYCy4eH_Mg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[Video of 40 minutes of training data playing the game](https://www.youtube.com/watch?v=ZmYCy4eH_Mg&feature=youtu.be&fbclid=IwAR1Gwp-NSWfflbZTQdxy3FknI4qS6aDpY-WAbC4UrZCQvEcGOW8cesMP7is)
 
 ## Setup instructions
 
