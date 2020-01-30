@@ -4,6 +4,8 @@ TensorFlow experiment trying to teach AI to play a simple game.
 
 [Video of 40 minutes of training data playing the game](https://www.youtube.com/watch?v=ZmYCy4eH_Mg&feature=youtu.be&fbclid=IwAR1Gwp-NSWfflbZTQdxy3FknI4qS6aDpY-WAbC4UrZCQvEcGOW8cesMP7is)
 
+[Blog post explaining the experiment](https://dev.solita.fi/2019/08/05/my-own-summer-neural-network.html)
+
 ## Setup instructions
 
 After tinkering with python environment, you should run [Endless Flighter](https://github.com/juhofriman/endless-flighter) game in your browser. Make an setup, in which you can position the game in the same exact location of the screen, as this uses screen capture.
